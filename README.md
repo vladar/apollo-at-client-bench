@@ -1,5 +1,9 @@
 # Apollo `@client` directive benchmarks
 
+## Related links:
+- [Apollo Client issue: Fields not marked with `@client` are being resolved locally ](https://github.com/apollographql/apollo-client/issues/9571)
+- [Proposed fix: Fields without a `@client` directive should not be resolved locally](https://github.com/apollographql/apollo-client/pull/9573)
+
 ## Example1. Single field with `@client` resolver
 
 ```shell
@@ -69,7 +73,7 @@ With client resolver
 
 ### With a fix
 
-In contrast, after applying an anticipated fix to skip selectionSets without local resolvers, the result is
+After applying a [potential fix](https://github.com/apollographql/apollo-client/pull/9573) to skip selectionSets without local resolvers, the result is
 expected:
 
 ```
