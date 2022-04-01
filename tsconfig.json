@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
+  },
+  "include": ["src", "benchmarks"],
+  "references": [],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
